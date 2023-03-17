@@ -1,0 +1,22 @@
+.main {
+    width: 1439px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-one {
+    height: 820px;
+}
+
+.section-two {
+    height: 500px;
+    background-image: url(../../img/paper.jpg);;
+}
