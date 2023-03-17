@@ -1,10 +1,9 @@
 .main-menu {
-    margin: 10px 0 0 118px;
+    margin-bottom: 20px;
 }
 
 .main-menu-item {
     margin-right: 40px;
-    color: #FFFFFF;
     font-family: 'Merienda';
     font-style: normal;
     font-weight: 400;
@@ -13,5 +12,5 @@
 }
 
 .logo {
-    margin: 30px 0 0 70px;
+    margin: 30px 0 0 35px;
 }

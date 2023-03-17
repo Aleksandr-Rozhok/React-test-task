@@ -10,7 +10,9 @@ class Header extends Component{
     render() {
         return (
             <header className="header">
-                <MainMenu />
+                <div className="main-menu-container">
+                    <MainMenu color={"white"} />
+                </div>
 
                 <div className="header-description-container">
                     <h1 className="header-title">Everything You Love About Coffee</h1>
