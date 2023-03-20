@@ -2,7 +2,6 @@ import { Component } from "react";
 
 import Footer from "../footer/footer";
 import Header from "../header/header";
-import DescriptionBlock from "../description-block/description-block";
 
 import "./our-coffee.css"
 import background from "../../img/our-coffee-header.jpg"
