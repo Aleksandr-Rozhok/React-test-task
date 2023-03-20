@@ -9,7 +9,7 @@ class MainHeader extends Component{
 
     render() {
         return (
-            <header className="header">
+            <header className="main-header">
                 <div className="main-menu-container">
                     <MainMenu color={"white"} />
                 </div>

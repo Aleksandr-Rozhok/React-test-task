@@ -10,7 +10,7 @@ class Header extends Component{
         const {title, background} = this.props;
 
         return (
-            <header className="header" style={{backgroundImage: {background}}}>
+            <header className="header" style={{backgroundImage: `url(${background})`}}>
                 <div className="main-menu-container">
                     <MainMenu color={"white"} />
                 </div>

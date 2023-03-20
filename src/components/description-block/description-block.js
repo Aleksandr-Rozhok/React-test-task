@@ -7,10 +7,10 @@ import './description-block.css'
 class DescriptionBlock extends Component {
 
     render () {
-        const {color, title, firstTextPart, secondTextPart} = this.props;
+        const {color, title, firstTextPart, secondTextPart, width} = this.props;
 
         return (
-            <div className="description-container">
+            <div className="description-container" style={{width: `${width}px`}}>
                 <h1 className="title">{title}</h1>
                  
                  <BeanDivider color={color}/>

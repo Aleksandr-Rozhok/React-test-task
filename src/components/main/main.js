@@ -39,6 +39,7 @@ class Main extends Component{
 
                 <section className="section-one">
                     <DescriptionBlock 
+                        width={"700"}
                         color={"black"}
                         title={"About Us"}
                         firstTextPart={firstTextPart}

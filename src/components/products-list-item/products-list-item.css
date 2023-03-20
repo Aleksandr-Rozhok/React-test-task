@@ -11,6 +11,11 @@
     cursor: pointer;
 }
 
+.product-item:nth-child(3n) {
+    page-break-after: always;
+  }
+  
+
 .product-img {
     width: 151px;   
     height: 130px;
