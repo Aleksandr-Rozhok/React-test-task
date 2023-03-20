@@ -5,14 +5,57 @@
     align-items: center;
 }
 
-.about-it {
+.about-section {
+    width: 70%;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: row;
+    margin: 70px 0;
+}
+
+.about-it {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
 }
 
 .img-about-it {
     height: 390px;
     width: 400px;
+}
+
+.desc-title {   
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.desc-category {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.text {
+    font-weight: 400;
+}
+
+.desc-price {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    margin-left: 10px;
+    color: #000000;
 }
