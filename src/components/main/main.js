@@ -1,10 +1,24 @@
 import { Component } from "react";
 
 import './main.css'
+import firstProductImg from '../../img/815O9ktyfUL.jpg'
+import secondProductImg from '../../img/91Ryk2gKejL.jpg'
+import thirdProductImg from '../../img/71qBQnpQFYL.jpg'
 
 import DescriptionBlock from "../description-block/description-block";
+import ProductsList from "../products-list/products-list.js";
 
 class Main extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: [
+                    {name: "Solimo Coffee Beans 2 kg", id: 0, img: firstProductImg, alt: "coffee package", price: "10.73$"},
+                    {name: "Presto Coffee Beans 1 kg", id: 2, img: secondProductImg, alt: "coffee package", price: "15.99$"},
+                    {name: "AROMISTICO Coffee 1 kg", id: 3, img: thirdProductImg, alt: "coffee package", price: "6.99$"},
+                ]
+        }
+    }
 
     render() {
         const firstTextPart = `Extremity sweetness difficult behavior he of. On disposal of as landlord horrible.
@@ -16,7 +30,9 @@ class Main extends Component{
             read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant
             horrible but confined day end marriage. Eagerness furniture set preserved far
             recommend. Did even but nor are most gave hope. Secure active living depend son
-            repair day ladies now.`
+            repair day ladies now.`;
+
+        const {data} = this.state;
 
         return (
             <main className="main">
@@ -30,6 +46,7 @@ class Main extends Component{
                 </section>
                 <section className="section-two">
                     <h2 className="second-section-title">Our best</h2>
+                    <ProductsList data={data}/>
                 </section>
                 
             </main>

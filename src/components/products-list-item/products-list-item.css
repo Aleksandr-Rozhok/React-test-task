@@ -1,0 +1,46 @@
+.product-item {
+    width: 220px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 8px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.product-img {
+    width: 151px;   
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.price-container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product-price {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}

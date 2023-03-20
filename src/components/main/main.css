@@ -1,6 +1,5 @@
 .main {
     width: 1439px;
-    height: 740px;
     display: flex;
     flex-direction: column;
 }
@@ -13,10 +12,27 @@
 }
 
 .section-one {
-    height: 820px;
+    height: 720px;
 }
 
 .section-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 500px;
-    background-image: url(../../img/paper.jpg);;
+    background-image: url(../../img/paper.jpg);
+}
+
+.second-section-title {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #000000;
+
+    margin-top: 80px;
 }
