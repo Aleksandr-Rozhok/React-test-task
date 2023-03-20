@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 import './main-menu.css'
 import whiteBeans from '../../img/Vector.png'
@@ -12,13 +13,22 @@ class MainMenu extends Component{
         
         return (
                 <nav className="main-menu">
-                    <a href="#">
-                        <img src={colorImg} alt="logo" className="logo" />
-                    </a>
-                    <a style={{color: `${color}`}} href="#" className="main-menu-item">Coffee house</a>
-                    <a style={{color: `${color}`}} href="#" className="main-menu-item">Our coffee</a>
-                    <a style={{color: `${color}`}} href="#" className="main-menu-item">For your pleasure</a>
-                </nav>
+                    <ul className="main-menu_ul">
+                        <li className="logo">
+                            <Link to="/" style={{color: `${color}`}}>
+                                <img src={colorImg} alt="logo" className="logo" />
+                            </Link></li>
+                        <li className="main-menu-item">
+                            <Link to="/coffee-house" style={{color: `${color}`}}>Coffee house</Link>
+                        </li>
+                        <li className="main-menu-item">
+                            <Link to="/our-coffee" style={{color: `${color}`}}>Our coffee</Link>
+                        </li>
+                        <li className="main-menu-item">
+                            <Link to="/pleasure" style={{color: `${color}`}}>For your pleasure</Link>
+                        </li>
+                    </ul>
+                </nav>  
         )
     }
 }
