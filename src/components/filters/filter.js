@@ -31,7 +31,7 @@ class Filters extends Component {
         return btnData.map(({key, label}) => {
 
             const active = this.state.term === key;
-            const clazz = active ? "btn-light" : "btn-outline-light";
+            const clazz = active ? "btn-light" : "";
 
             return (
                 <button 

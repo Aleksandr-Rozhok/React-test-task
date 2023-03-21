@@ -61,3 +61,8 @@
     text-align: center;
     color: #000000;
 }
+
+.btn-light {
+    background-color: #000000;
+    color: #FFF;
+}

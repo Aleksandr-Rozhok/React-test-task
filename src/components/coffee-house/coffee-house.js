@@ -32,13 +32,9 @@ class CoffeeHouse extends Component {
     }
 
     filterEmp = (items, term) => {
-        if (term.length === 0) {
-            return items;
-        } else if (term === "onIncrease") {
-            return items.filter(item => item.increase)
-        } else if (term === "moreThousand") {
-            return items.filter(item => item.salary > 1000)
-        }
+        if (term) {
+            return items.filter(item => item.country === term)
+        } 
             
         return items.filter(item => {
             return item.country.indexOf(term) > -1;
