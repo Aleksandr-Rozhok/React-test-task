@@ -3,12 +3,13 @@ import { Component } from "react";
 import Header from "../header/header";
 import DescriptionBlock from "../description-block/description-block";
 import ProductsList from "../products-list/products-list";
-import Footer from "../footer/footer"
+import Footer from "../footer/footer";
+import Filters from "../filters/filter";
 
 import "./coffee-house.css";
-import background from "../../img/our-coffee-header.jpg"
-import imgGirl from "../../img/girl.jpg"
-import imgCoffee from "../../img/71qBQnpQFYL.jpg"
+import background from "../../img/our-coffee-header.jpg";
+import imgGirl from "../../img/girl.jpg";
+import imgCoffee from "../../img/71qBQnpQFYL.jpg";
 
 class CoffeeHouse extends Component {
     constructor(props) {
@@ -52,9 +53,7 @@ class CoffeeHouse extends Component {
 
                     <p style={{borderBlockColor: "black", width: "240px"}} className="line"></p>
 
-                    <div className="filters">
-
-                    </div>
+                    <Filters />
 
                     <ProductsList data={data} />
                     <Footer />
