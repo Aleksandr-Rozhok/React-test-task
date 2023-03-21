@@ -34,10 +34,27 @@
     margin: 10px 0;
 }
 
+.country-container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .price-container {
     width: 80%;
     display: flex;
     justify-content: flex-end;
+}
+
+.product-country {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
 }
 
 .product-price {

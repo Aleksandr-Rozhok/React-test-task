@@ -22,8 +22,27 @@ class CoffeeHouse extends Component {
                 {name: "AROMISTICO Coffee 1 kg", id: 3, img: imgCoffee, country: "Brazil", price: "6.99$"},
                 {name: "AROMISTICO Coffee 1 kg", id: 4, img: imgCoffee, country: "Brazil", price: "6.99$"},
                 {name: "AROMISTICO Coffee 1 kg", id: 5, img: imgCoffee, country: "Brazil", price: "6.99$"},
-            ]
+            ],
+            term: ""
         }
+    }
+
+    onUpdateFilters = (term) => {
+        this.setState(({term}));
+    }
+
+    filterEmp = (items, term) => {
+        if (term.length === 0) {
+            return items;
+        } else if (term === "onIncrease") {
+            return items.filter(item => item.increase)
+        } else if (term === "moreThousand") {
+            return items.filter(item => item.salary > 1000)
+        }
+            
+        return items.filter(item => {
+            return item.country.indexOf(term) > -1;
+        })
     }
 
     render() {
@@ -35,7 +54,8 @@ class CoffeeHouse extends Component {
         met spot shy want. Children me laughing we prospect answered followed. At it went
         is song that held help face.`;
 
-        const {data} = this.state;
+        const {data, term} = this.state;
+        const visibleData = this.filterEmp(data, term);
 
         return (
             <>
@@ -53,9 +73,9 @@ class CoffeeHouse extends Component {
 
                     <p style={{borderBlockColor: "black", width: "240px"}} className="line"></p>
 
-                    <Filters />
+                    <Filters onUpdateFilters={this.onUpdateFilters} />
 
-                    <ProductsList data={data} />
+                    <ProductsList data={visibleData} />
                     <Footer />
                 </div>
             </>
